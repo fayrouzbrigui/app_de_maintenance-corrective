@@ -1,0 +1,156 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #0b132b;
+}
+
+.add-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-form {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.add-form h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-form input,
+.add-form select{
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #0b132b;
+  border: 1px solid #1c2541;
+  border-radius: 5px;
+  color: #ffffff;
+  outline: none;
+}
+
+.add-form input::placeholder {
+  color: #cfd8dc;
+}
+
+.add-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1c7ed6;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-form button:hover {
+  background-color: #1864ab;
+}
+
+.back-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.back-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #1c2541;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #1c2541;
+  text-align: left;
+}
+
+.table tr:hover {
+  background-color: #0b132b;
+}
+
+.edit-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-form {
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 10px;
+  width: 380px;
+  color: #ffffff;
+}
+
+.edit-form input,
+.edit-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #0b132b;
+  border: 1px solid #1c2541;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn {
+  background-color: #1c7ed6;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #e03131;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.85;
+}
